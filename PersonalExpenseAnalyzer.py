@@ -33,21 +33,24 @@ for expense in expense_list:
 
 #Then print out the results for user:
 #• Total number of expenses
-
+print(f"Total number of expenses: {len(expense_list)}")
 
 #• Total expenses
-
+print(f"Total expenses: ${sum(expense_list):,.2f}")
 
 #• Average expense
-
+print(f"Average expense: ${(sum(expense_list) / len(expense_list)):,.2f}")
 
 #• Smallest expense
-
+print(f"Smallest expense: ${min(expense_list):,.2f}")
 
 #• Largest expense
-
+print(f"Largest expense: ${max(expense_list):,.2f}")
 
 #• Number of small, medium, and large expenses
+print(f"Number of small expenses: {small_expense_count}")
+print(f"Number of moderate expenses: {moderate_expense_count}")
+print(f"Number of large expenses: {large_expense_count}")
 
 
 #Make sure to format all the dollar amounts properly.
