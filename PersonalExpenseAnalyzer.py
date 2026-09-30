@@ -19,6 +19,18 @@ while given_expense != 0:
 #• $25 through $100: Moderate expense
 #• Greater than $100: Large expense
 
+small_expense_count = 0
+moderate_expense_count = 0
+large_expense_count = 0
+
+for expense in expense_list:
+    if expense < 25:
+        small_expense_count += 1
+    elif expense <= 100:
+        moderate_expense_count += 1
+    else:
+        large_expense_count += 1
+
 #Then print out the results for user:
 #• Total number of expenses
 
